@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Promo Code Generator</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -27,7 +28,7 @@
                 <option value="4">4</option>
             </select>
         </div>
-        <button id="startBtn">Generate Keys</button>
+        <button id="startBtn" class="btn-primary">Generate Keys</button>
         <div id="progressContainer" class="hidden">
             <div class="progress-bar">
                 <div id="progressBar"></div>
@@ -38,9 +39,9 @@
         <div id="keyContainer" class="hidden">
             <h3 id="generatedKeysTitle" class="hidden">Generated Keys:</h3>
             <div id="keysList"></div>
-            <button id="copyAllBtn" class="hidden">Copy All Keys</button>
+            <button id="copyAllBtn" class="btn-secondary hidden">Copy All Keys</button>
             <div id="copyStatus" class="hidden">Copied!</div>
-            <button id="generateMoreBtn">Generate More Keys</button>
+            <button id="generateMoreBtn" class="btn-primary">Generate More Keys</button>
         </div>
         <div class="footer">
             <p>🐹❤</p>
