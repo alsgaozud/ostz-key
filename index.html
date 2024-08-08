@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Key Generator</title>
+    <title>Game Promo Code Generator</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
-        <h1>Key Generator</h1>
-
-        <div class="select-group">
-            <label for="gameSelect">Select Game:</label>
+    <div class="container">
+        <h1>ostaz-keys</h1>
+        <div class="form-group">
+            <label for="gameSelect">Select Game</label>
             <select id="gameSelect">
                 <option value="1">Riding Extreme 3D</option>
-                <option value="2">Another Game</option>
+                <option value="2">Chain Cube 2048</option>
+                <option value="3">My Clone Army</option>
+                <option value="4">Train Miner</option>
             </select>
         </div>
-
-        <div class="select-group">
-            <label for="keyCountSelect">Number of Keys:</label>
+        <div class="form-group">
+            <label id="keyCountLabel" for="keyCountSelect">Number of keys:</label>
             <select id="keyCountSelect">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -27,24 +28,25 @@
                 <option value="4">4</option>
             </select>
         </div>
-
-        <button id="startBtn">Generate Keys</button>
-
+        <button id="startBtn" class="btn-primary">Generate Keys</button>
         <div id="progressContainer" class="hidden">
-            <div id="progressBar"></div>
-            <span id="progressText"></span>
-            <p id="progressLog"></p>
+            <div class="progress-bar">
+                <div id="progressBar"></div>
+            </div>
+            <div id="progressText">0%</div>
+            <div id="progressLog">Starting...</div>
         </div>
-
         <div id="keyContainer" class="hidden">
-            <h2 id="generatedKeysTitle">Generated Keys:</h2>
+            <h3 id="generatedKeysTitle" class="hidden">Generated Keys:</h3>
             <div id="keysList"></div>
-            <button id="copyAllBtn">Copy All Keys</button>
-            <button id="generateMoreBtn">Generate More Keys</button>
-            <p id="copyStatus" class="hidden"></p>
+            <button id="copyAllBtn" class="btn-secondary hidden">Copy All Keys</button>
+            <div id="copyStatus" class="hidden">Copied!</div>
+            <button id="generateMoreBtn" class="btn-primary">Generate More Keys</button>
+        </div>
+        <div class="footer">
+            <p>🐹❤</p>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
