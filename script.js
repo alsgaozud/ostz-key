@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const EVENTS_DELAY = 1000;
+    const EVENTS_DELAY = 20000;
 
     const games = {
         1: {
